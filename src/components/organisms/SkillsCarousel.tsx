@@ -52,7 +52,7 @@ export function SkillsCarousel() {
           className="text-center mx-auto"
         >
           <SectionTitle label="// tecnologías" title="Mi Stack" />
-          <p className="text-[#A3A3A3] max-w-2xl mx-auto text-center -mt-8 mb-12">
+          <p className="text-center max-w-2xl mx-auto text-[#A3A3A3] -mt-8 mb-12">
             Las tecnologías con las que construyo soluciones día a día.
           </p>
         </motion.div>

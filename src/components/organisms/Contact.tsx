@@ -26,7 +26,7 @@ export function Contact() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-col items-center gap-8"
         >
-          <p className="text-[#A3A3A3] text-lg max-w-2xl mx-auto text-center leading-relaxed">
+          <p className="text-center max-w-2xl mx-auto text-[#A3A3A3] text-lg leading-relaxed">
             Disponible para proyectos freelance, posiciones full-time o simplemente
             para hablar sobre tecnología. ¡Conectemos!
           </p>

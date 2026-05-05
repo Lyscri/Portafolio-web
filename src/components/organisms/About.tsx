@@ -20,7 +20,7 @@ export function About() {
       <div className="max-w-7xl mx-auto px-6">
         <motion.div {...FADE_IN_UP} className="text-center mx-auto">
           <SectionTitle label="// sobre mí" title="Quién soy" />
-          <p className="text-[#A3A3A3] max-w-2xl mx-auto text-center -mt-8 mb-12">
+          <p className="text-center max-w-2xl mx-auto text-[#A3A3A3] -mt-8 mb-12">
             Desarrollador Fullstack con enfoque en TypeScript — construyendo desde
             APIs hasta interfaces de usuario.
           </p>
