@@ -50,11 +50,10 @@ export function Navbar() {
         {/* Logo */}
         <button
           onClick={() => scrollToSection('#hero')}
-          className="font-mono font-bold text-lg tracking-tight cursor-none"
+          className="font-mono font-bold text-base tracking-tight cursor-none"
         >
-          <span className="text-[#E8000D]">{'<'}</span>
-          <span className="text-white">FF</span>
-          <span className="text-[#E8000D]">{'/>'}</span>
+          <span className="text-[#E8000D]">Felix Felipe</span>
+          <span className="text-white/60"> - Portafolio/</span>
         </button>
 
         {/* Desktop links */}
