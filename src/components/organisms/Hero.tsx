@@ -86,17 +86,17 @@ export function Hero() {
           >
             <button
               onClick={() => scrollToSection('#projects')}
-              className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#E8000D] bg-[#E8000D] text-white font-mono font-bold rounded-none transition-all duration-200 hover:bg-white hover:text-[#E8000D] cursor-none w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#E8000D] bg-[#E8000D] text-white font-mono font-bold rounded-none transition-all duration-200 hover:bg-white hover:text-[#E8000D] w-full sm:w-auto justify-center"
             >
               Ver proyectos
-              <ArrowDown className="w-4 h-4" />
+              <ArrowDown className="w-4 h-4 ml-2" />
             </button>
             <button
               onClick={() => scrollToSection('#contact')}
-              className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#E8000D] bg-transparent text-[#E8000D] font-mono font-bold rounded-none transition-all duration-200 hover:bg-[#E8000D] hover:text-white cursor-none w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#E8000D] bg-transparent text-[#E8000D] font-mono font-bold rounded-none transition-all duration-200 hover:bg-[#E8000D] hover:text-white w-full sm:w-auto justify-center"
             >
               Contactar
-              <Mail className="w-4 h-4" />
+              <Mail className="w-4 h-4 ml-2" />
             </button>
           </motion.div>
         </motion.div>
