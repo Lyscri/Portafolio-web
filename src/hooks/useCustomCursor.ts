@@ -5,7 +5,7 @@ interface CursorPosition {
   y: number
 }
 
-const LERP_FACTOR = 0.15
+const LERP_FACTOR = 0.18
 
 export function useCustomCursor() {
   const [position, setPosition] = useState<CursorPosition>({ x: 0, y: 0 })
