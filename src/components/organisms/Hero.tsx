@@ -12,8 +12,8 @@ function isPrompt(line: string) {
 
 export function Hero() {
   const { displayedLines } = useTypingEffect(TYPING_LINES, {
-    speed: 40,
-    pauseAfter: 600,
+    speed: 25,
+    pauseAfter: 400,
   })
 
   return (
@@ -65,6 +65,7 @@ export function Hero() {
                           ? 'text-green-400'
                           : 'text-[#A3A3A3]'
                       }
+                      style={{ whiteSpace: 'pre-line' }}
                     >
                       {line}
                     </span>

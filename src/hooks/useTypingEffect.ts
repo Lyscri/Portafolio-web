@@ -10,7 +10,7 @@ export function useTypingEffect(
   texts: string[],
   options: UseTypingEffectOptions = {}
 ) {
-  const { speed = 50, pauseAfter = 800 } = options
+  const { speed = 25, pauseAfter = 400 } = options
   const [displayedLines, setDisplayedLines] = useState<string[]>([])
   const [currentLineIndex, setCurrentLineIndex] = useState(0)
   const [currentCharIndex, setCurrentCharIndex] = useState(0)

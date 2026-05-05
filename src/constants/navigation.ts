@@ -41,7 +41,7 @@ export const TERMINAL_SEQUENCE = [
   { prompt: '> whoami', output: 'Felix Felipe' },
   {
     prompt: '> cat about.txt',
-    output: 'TU_AUTOBIOGRAFÍA_AQUÍ',
+    output: 'Full Stack Developer\n📍 Santiago de los Caballeros, Rep. Dom.',
   },
   {
     prompt: '> skills --list',
