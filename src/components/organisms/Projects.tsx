@@ -5,7 +5,7 @@ import { PROJECTS } from '@/constants/projects'
 
 export function Projects() {
   return (
-    <section id="projects" className="min-h-screen py-32 bg-[#0A0A0A] flex flex-col items-center justify-center">
+    <section id="projects" className="py-24 md:py-32 bg-[#0A0A0A] flex flex-col items-center justify-center">
        <div className="w-full max-w-7xl mx-auto px-6">
          <motion.div
            initial={{ opacity: 0, y: 40 }}

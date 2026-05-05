@@ -7,7 +7,7 @@ import { SOCIAL_LINKS } from '@/constants/navigation'
 
 export function Contact() {
   return (
-    <section id="contact" className="min-h-[80vh] py-32 bg-[#111111] flex flex-col items-center justify-center">
+    <section id="contact" className="py-24 md:py-32 bg-[#111111] flex flex-col items-center justify-center">
        <div className="w-full max-w-4xl mx-auto px-6 text-center">
          <motion.div
            initial={{ opacity: 0, y: 40 }}
