@@ -23,7 +23,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       className="bg-[#111111] border border-[#1F1F1F] rounded-2xl overflow-hidden group hover:border-[#E8000D]/50 transition-all duration-300 card-glow min-h-[420px] flex flex-col"
     >
       {/* Image */}
-      <div className="relative overflow-hidden h-48 bg-[#0A0A0A]">
+      <div className="relative overflow-hidden h-48 bg-[#0A0A0A] mb-4">
         {isPlaceholderImage(project.image) ? (
           <div className="w-full h-full flex flex-col items-center justify-center gap-3 p-4">
             <div className="w-12 h-12 rounded-full bg-[#E8000D]/10 border border-[#E8000D]/30 flex items-center justify-center">
