@@ -43,19 +43,20 @@ export function SkillsCarousel() {
 
   return (
     <section id="skills" className="py-24 bg-[#111111]" ref={containerRef}>
-      <div className="max-w-7xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mx-auto"
-        >
-          <SectionTitle label="// tecnologías" title="Mi Stack" />
-          <p className="text-center max-w-2xl mx-auto text-[#A3A3A3] -mt-8 mb-12">
-            Las tecnologías con las que construyo soluciones día a día.
-          </p>
-        </motion.div>
+       <div className="max-w-7xl mx-auto px-6">
+         <motion.div
+           initial={{ opacity: 0, y: 40 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           transition={{ duration: 0.6 }}
+         >
+           <div className="flex flex-col items-center text-center w-full mb-12">
+             <SectionTitle label="// tecnologías" title="Mi Stack" />
+             <p className="text-[#A3A3A3] text-center max-w-2xl mt-4">
+               Las tecnologías con las que construyo soluciones día a día.
+             </p>
+           </div>
+         </motion.div>
       </div>
 
       <div className="flex flex-col gap-6 mt-4">
