@@ -53,7 +53,7 @@ export function Navbar() {
           className="font-mono font-bold text-base tracking-tight cursor-none"
         >
           <span className="text-[#E8000D]">Felix Felipe</span>
-          <span className="text-white/60"> - Portafolio/</span>
+          <span className="text-white/70"> - Portafolio/</span>
         </button>
 
         {/* Desktop links */}
