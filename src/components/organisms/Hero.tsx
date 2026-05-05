@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
-import { ChevronDown, Terminal } from 'lucide-react'
-import { Button } from '@/components/atoms/Button'
+import { ArrowDown, ChevronDown, Mail, Terminal } from 'lucide-react'
 import { useTypingEffect } from '@/hooks/useTypingEffect'
 import { TERMINAL_SEQUENCE } from '@/constants/navigation'
 import { scrollToSection } from '@/utils'
@@ -82,23 +81,22 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 0.6 }}
-            className="flex flex-col sm:flex-row items-center gap-4 mt-8"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
           >
-            <Button
-              size="lg"
+            <button
               onClick={() => scrollToSection('#projects')}
-              className="w-full sm:w-auto"
+              className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#E8000D] bg-[#E8000D] text-white font-mono font-bold rounded-none transition-all duration-200 hover:bg-white hover:text-[#E8000D] cursor-none w-full sm:w-auto justify-center"
             >
               Ver proyectos
-            </Button>
-            <Button
-              size="lg"
-              variant="secondary"
+              <ArrowDown className="w-4 h-4" />
+            </button>
+            <button
               onClick={() => scrollToSection('#contact')}
-              className="w-full sm:w-auto"
+              className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#E8000D] bg-transparent text-[#E8000D] font-mono font-bold rounded-none transition-all duration-200 hover:bg-[#E8000D] hover:text-white cursor-none w-full sm:w-auto justify-center"
             >
               Contactar
-            </Button>
+              <Mail className="w-4 h-4" />
+            </button>
           </motion.div>
         </motion.div>
       </div>
