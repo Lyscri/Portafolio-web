@@ -12,8 +12,12 @@ export function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          className="text-center mx-auto"
         >
           <SectionTitle label="// proyectos" title="Mi Trabajo" />
+          <p className="text-[#A3A3A3] max-w-2xl mx-auto text-center -mt-8 mb-12">
+            Proyectos seleccionados que reflejan mi proceso y stack técnico.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">

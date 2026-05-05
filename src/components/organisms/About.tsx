@@ -18,8 +18,12 @@ export function About() {
   return (
     <section id="about" className="py-24 bg-[#0A0A0A]">
       <div className="max-w-7xl mx-auto px-6">
-        <motion.div {...FADE_IN_UP}>
+        <motion.div {...FADE_IN_UP} className="text-center mx-auto">
           <SectionTitle label="// sobre mí" title="Quién soy" />
+          <p className="text-[#A3A3A3] max-w-2xl mx-auto text-center -mt-8 mb-12">
+            Desarrollador Fullstack con enfoque en TypeScript — construyendo desde
+            APIs hasta interfaces de usuario.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

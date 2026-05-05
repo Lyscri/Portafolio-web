@@ -49,8 +49,12 @@ export function SkillsCarousel() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
+          className="text-center mx-auto"
         >
           <SectionTitle label="// tecnologías" title="Mi Stack" />
+          <p className="text-[#A3A3A3] max-w-2xl mx-auto text-center -mt-8 mb-12">
+            Las tecnologías con las que construyo soluciones día a día.
+          </p>
         </motion.div>
       </div>
 
