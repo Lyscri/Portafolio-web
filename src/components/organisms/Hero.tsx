@@ -77,28 +77,45 @@ export function Hero() {
             </div>
           </div>
 
-          {/* CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.5, duration: 0.6 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
-          >
-            <button
-              onClick={() => scrollToSection('#projects')}
-              className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#E8000D] bg-[#E8000D] text-white font-mono font-bold rounded-none transition-all duration-200 hover:bg-white hover:text-[#E8000D] w-full sm:w-auto justify-center"
-            >
-              Ver proyectos
-              <ArrowDown className="w-4 h-4 ml-2" />
-            </button>
-            <button
-              onClick={() => scrollToSection('#contact')}
-              className="inline-flex items-center gap-2 px-8 py-3 border-2 border-[#E8000D] bg-transparent text-[#E8000D] font-mono font-bold rounded-none transition-all duration-200 hover:bg-[#E8000D] hover:text-white w-full sm:w-auto justify-center"
-            >
-              Contactar
-              <Mail className="w-4 h-4 ml-2" />
-            </button>
-          </motion.div>
+           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
+             <button
+               onClick={() => scrollToSection('#projects')}
+               className="
+                 inline-flex items-center justify-center gap-3
+                 px-10 py-4
+                 bg-[#E8000D] text-white
+                 border-2 border-[#E8000D]
+                 font-mono font-bold text-sm tracking-widest uppercase
+                 rounded-none
+                 transition-all duration-200
+                 hover:bg-white hover:text-[#E8000D]
+                 w-full sm:w-auto
+                 min-w-[180px]
+               "
+             >
+               Ver proyectos
+               <ArrowDown className="w-4 h-4" />
+             </button>
+
+             <button
+               onClick={() => scrollToSection('#contact')}
+               className="
+                 inline-flex items-center justify-center gap-3
+                 px-10 py-4
+                 bg-transparent text-[#E8000D]
+                 border-2 border-[#E8000D]
+                 font-mono font-bold text-sm tracking-widest uppercase
+                 rounded-none
+                 transition-all duration-200
+                 hover:bg-[#E8000D] hover:text-white
+                 w-full sm:w-auto
+                 min-w-[180px]
+               "
+             >
+               Contactar
+               <Mail className="w-4 h-4" />
+             </button>
+           </div>
         </motion.div>
       </div>
 
