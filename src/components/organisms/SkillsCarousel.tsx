@@ -41,7 +41,7 @@ export function SkillsCarousel() {
   const rowTwo = SKILLS.slice(half)
 
   return (
-    <section id="skills" className="min-h-[60vh] py-24 bg-[#111111] overflow-x-hidden flex flex-col items-center justify-center" ref={containerRef}>
+    <section id="skills" className="py-24 bg-[#111111] overflow-x-hidden flex flex-col items-center justify-center" ref={containerRef}>
       <div className="flex flex-col gap-6 w-full">
         {/* Row 1 — left to right */}
         <div className="relative">
