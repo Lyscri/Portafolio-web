@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# 🚀 Felix Felipe - Portafolio Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Desarrollador Fullstack apasionado por construir experiencias digitales de alto impacto.
 
-Currently, two official plugins are available:
+Bienvenido al repositorio de mi portafolio web personal. Aquí expongo mis proyectos destacados, mis habilidades técnicas y mi trayectoria como **Desarrollador Fullstack**. Mi enfoque principal está en construir aplicaciones escalables, rápidas y con diseños impecables utilizando todo el poder del ecosistema **TypeScript**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💻 Mi Stack Principal
 
-## React Compiler
+Especializado en el desarrollo de extremo a extremo, desde robustas APIs hasta modernas interfaces de usuario:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React, Next.js, Tailwind CSS
+- **Backend:** NestJS, HonoJS, Node.js
+- **Bases de Datos:** PostgreSQL, SQL Server
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías de este Portafolio
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Este sitio fue diseñado y construido desde cero utilizando herramientas modernas para garantizar el mejor rendimiento y la mejor experiencia de usuario:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+- ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+- ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ Instalación y Desarrollo Local
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Si deseas clonar e inspeccionar el código de este proyecto en tu máquina local, sigue estos pasos:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/Lyscri/Portafolio-web.git
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Ve al directorio del proyecto:**
+   ```bash
+   cd Portafolio-web
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Instala las dependencias:**
+   (Se recomienda usar `bun`, pero funciona con npm/yarn/pnpm)
+   ```bash
+   bun install
+   ```
+
+4. **Inicia el servidor de desarrollo:**
+   ```bash
+   bun dev
+   ```
+
+5. El proyecto se levantará localmente. Abre tu navegador en la URL que indique tu consola (usualmente `http://localhost:5173`).
+
+## 📭 Contacto
+
+Disponible para proyectos freelance, posiciones full-time o simplemente para hablar sobre tecnología. ¡Hagamos networking!
+
+- 📧 **Email:** [felixrafaelff1109@gmail.com](mailto:felixrafaelff1109@gmail.com)
+- 💼 **LinkedIn:** [Felix Felipe](https://www.linkedin.com/in/felix-felipe00)
+- 🐙 **GitHub:** [@Lyscri](https://github.com/Lyscri)
+- 🐦 **X / Twitter:** [@Lyscri](https://twitter.com/Lyscri)
+
+---
+
+<p align="center">
+  <i>Diseñado y desarrollado por Felix Felipe.</i><br>
+  <i>Hecho con TypeScript y ☕ en República Dominicana 🇩🇴</i>
+</p>
