@@ -16,12 +16,12 @@ export function About() {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.2 })
 
   return (
-    <section id="about" className="py-24 bg-[#0A0A0A]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="about" className="min-h-screen py-32 bg-[#0A0A0A] flex flex-col items-center justify-center">
+      <div className="w-full max-w-7xl mx-auto px-6">
         <motion.div {...FADE_IN_UP}>
-  <div className="flex flex-col items-center text-center w-full mb-12">
-    <SectionTitle label="// sobre mí" title="Quién soy" />
-    <p className="text-[#A3A3A3] text-center max-w-2xl mt-4">
+  <div className="flex flex-col items-center text-center w-full">
+    <SectionTitle label="" title="Quién soy" />
+    <p className="text-[#A3A3A3] text-center max-w-2xl mt-4 mb-16">
       Desarrollador Fullstack con enfoque en TypeScript — construyendo desde
       APIs hasta interfaces de usuario.
     </p>

@@ -77,7 +77,7 @@ export function Hero() {
             </div>
           </div>
 
-           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
+           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-14">
              <button
                onClick={() => scrollToSection('#projects')}
                className="
