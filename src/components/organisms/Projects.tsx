@@ -16,7 +16,7 @@ export function Projects() {
           <SectionTitle label="// proyectos" title="Mi Trabajo" />
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {PROJECTS.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} />
           ))}

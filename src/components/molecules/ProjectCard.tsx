@@ -20,10 +20,10 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="bg-[#111111] border border-[#1F1F1F] rounded-2xl overflow-hidden group hover:border-[#E8000D]/50 transition-all duration-300 card-glow"
+      className="bg-[#111111] border border-[#1F1F1F] rounded-2xl overflow-hidden group hover:border-[#E8000D]/50 transition-all duration-300 card-glow min-h-[420px] flex flex-col"
     >
       {/* Image */}
-      <div className="relative overflow-hidden aspect-video bg-[#0A0A0A]">
+      <div className="relative overflow-hidden h-48 bg-[#0A0A0A]">
         {isPlaceholderImage(project.image) ? (
           <div className="w-full h-full flex flex-col items-center justify-center gap-3 p-4">
             <div className="w-12 h-12 rounded-full bg-[#E8000D]/10 border border-[#E8000D]/30 flex items-center justify-center">
@@ -57,7 +57,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       </div>
 
       {/* Content */}
-      <div className="p-6 flex flex-col gap-4">
+      <div className="p-8 flex flex-col gap-4 flex-1 mt-4">
         <h3 className="text-white font-semibold text-lg leading-snug">
           {project.title}
         </h3>
