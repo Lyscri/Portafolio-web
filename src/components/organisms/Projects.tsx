@@ -21,9 +21,11 @@ export function Projects() {
            </div>
          </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+        <div className="flex flex-wrap justify-center gap-10">
           {PROJECTS.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
+            <div key={project.id} className="w-full md:w-[calc(50%-20px)] xl:w-[calc(33.333%-27px)] max-w-[400px]">
+              <ProjectCard project={project} index={index} />
+            </div>
           ))}
         </div>
       </div>
