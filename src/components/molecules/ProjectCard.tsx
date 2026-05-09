@@ -2,7 +2,6 @@ import { ExternalLink } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Badge } from '@/components/atoms/Badge'
 import { Button } from '@/components/atoms/Button'
-import { TodoPlaceholder } from '@/components/atoms/TodoPlaceholder'
 import { SocialIcon } from '@/components/atoms/SocialIcon'
 import type { Project } from '@/types'
 
