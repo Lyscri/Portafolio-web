@@ -53,11 +53,11 @@ export function Footer() {
           </div>
 
           {/* Socials Column */}
-          <div className="md:col-span-4 flex flex-col items-start">
+          <div className="md:col-span-4 flex flex-col items-start md:items-end">
             <h3 className="text-white font-sans font-semibold mb-8 text-sm uppercase tracking-[0.2em]">
               Conecta
             </h3>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 items-start md:items-end">
               <a
                 href="mailto:felixrafaelff1109@gmail.com"
                 className="text-[#888888] hover:text-white transition-colors text-base font-sans flex items-center gap-3 relative group w-fit"
