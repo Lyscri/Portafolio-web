@@ -1,4 +1,4 @@
-import { Mail, MapPin, ArrowUpRight } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 import { SocialIcon } from '@/components/atoms/SocialIcon'
 import { getCurrentYear, scrollToSection } from '@/utils'
 import { NAV_LINKS } from '@/constants/navigation'
