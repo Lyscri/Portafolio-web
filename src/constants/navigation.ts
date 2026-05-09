@@ -32,8 +32,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ]
 
 export const METRICS: Metric[] = [
-  { value: 3, label: 'Años de experiencia', suffix: '+' },
-  { value: 20, label: 'Proyectos completados', suffix: '+' },
+  { value: 1, label: 'Año de experiencia', suffix: '' },
+  { value: 2, label: 'Proyectos completados', suffix: '+' },
   { value: 8, label: 'Tecnologías dominadas', suffix: '' },
 ]
 
