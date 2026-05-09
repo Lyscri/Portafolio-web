@@ -1,66 +1,95 @@
-# 🚀 Felix Felipe - Portafolio Web
+<div align="center">
+  
+  # 🚀 Felix Felipe | Desarrollador Fullstack
+  
+  **Construyendo experiencias digitales de alto impacto con TypeScript.**
 
-> Desarrollador Fullstack apasionado por construir experiencias digitales de alto impacto.
+  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
+  [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+  [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com)
+  [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org)
 
-Bienvenido al repositorio de mi portafolio web personal. Aquí expongo mis proyectos destacados, mis habilidades técnicas y mi trayectoria como **Desarrollador Fullstack**. Mi enfoque principal está en construir aplicaciones escalables, rápidas y con diseños impecables utilizando todo el poder del ecosistema **TypeScript**.
+</div>
 
-## 💻 Mi Stack Principal
+<br />
 
-Especializado en el desarrollo de extremo a extremo, desde robustas APIs hasta modernas interfaces de usuario:
+Bienvenido al repositorio de mi **Portafolio Web**. Este espacio no solo sirve como mi carta de presentación, sino también como una demostración viva de mis habilidades técnicas en el frontend y mi sensibilidad por el diseño de interfaces (UI/UX).
 
-- **Frontend:** React, Next.js, Tailwind CSS
-- **Backend:** NestJS, HonoJS, Node.js
-- **Bases de Datos:** PostgreSQL, SQL Server
+---
 
-## 🛠️ Tecnologías de este Portafolio
+## 💻 Mi Stack Tecnológico
 
-Este sitio fue diseñado y construido desde cero utilizando herramientas modernas para garantizar el mejor rendimiento y la mejor experiencia de usuario:
+Especializado en el desarrollo *end-to-end* en el ecosistema **TypeScript**, abarcando desde arquitecturas robustas en el backend hasta interfaces dinámicas y modernas.
 
-- ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-- ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
-- ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-- ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+| Frontend | Backend | Base de Datos | Herramientas |
+| :--- | :--- | :--- | :--- |
+| **React** (Hooks, Context) | **NestJS** (Modular, OOP) | **PostgreSQL** | **Git / GitHub** |
+| **Next.js** (SSR, SSG) | **HonoJS** (Edge, Rápido) | **SQL Server** | **Docker** |
+| **Tailwind CSS** | **Node.js / Express** | Redis (Opcional) | Vite / Webpack |
+| Framer Motion | RESTful APIs | TypeORM / Prisma | ESLint / Prettier |
+
+---
+
+## 🎨 Sobre este Portafolio
+
+Este sitio fue diseñado meticulosamente con un enfoque oscuro ("dark mode"), utilizando animaciones suaves y tipografías modernas para reflejar un perfil técnico y profesional.
+
+### Tecnologías Clave de este Proyecto:
+- ⚡ **[Vite](https://vitejs.dev/)** - Herramienta de compilación súper rápida.
+- ⚛️ **[React 19](https://react.dev/)** - Biblioteca principal para la interfaz de usuario.
+- 🎨 **[Tailwind CSS v4](https://tailwindcss.com/)** - Estilos utilitarios para un diseño fluido y responsivo.
+- 🎬 **[Framer Motion](https://www.framer.com/motion/)** - Animaciones, efectos de scroll y transiciones declarativas.
+- 🔤 **[Google Fonts](https://fonts.google.com/)** - Tipografías *Inter* (lectura) y *JetBrains Mono* (detalles técnicos).
+
+---
 
 ## ⚙️ Instalación y Desarrollo Local
 
-Si deseas clonar e inspeccionar el código de este proyecto en tu máquina local, sigue estos pasos:
+Si deseas clonar el proyecto para explorarlo o usarlo como inspiración:
 
-1. **Clona el repositorio:**
+1. **Clona este repositorio:**
    ```bash
    git clone https://github.com/Lyscri/Portafolio-web.git
    ```
 
-2. **Ve al directorio del proyecto:**
+2. **Accede al directorio:**
    ```bash
    cd Portafolio-web
    ```
 
 3. **Instala las dependencias:**
-   (Se recomienda usar `bun`, pero funciona con npm/yarn/pnpm)
+   *(Recomiendo usar `bun`, pero `npm`, `yarn` o `pnpm` funcionan perfectamente).*
    ```bash
    bun install
    ```
 
-4. **Inicia el servidor de desarrollo:**
+4. **Inicia el servidor en modo desarrollo:**
    ```bash
    bun dev
    ```
 
-5. El proyecto se levantará localmente. Abre tu navegador en la URL que indique tu consola (usualmente `http://localhost:5173`).
-
-## 📭 Contacto
-
-Disponible para proyectos freelance, posiciones full-time o simplemente para hablar sobre tecnología. ¡Hagamos networking!
-
-- 📧 **Email:** [felixrafaelff1109@gmail.com](mailto:felixrafaelff1109@gmail.com)
-- 💼 **LinkedIn:** [Felix Felipe](https://www.linkedin.com/in/felix-felipe00)
-- 🐙 **GitHub:** [@Lyscri](https://github.com/Lyscri)
-- 🐦 **X / Twitter:** [@Lyscri](https://twitter.com/Lyscri)
+5. **Abre tu navegador:**
+   Visita `http://localhost:5173` para ver el proyecto en acción.
 
 ---
 
-<p align="center">
-  <i>Diseñado y desarrollado por Felix Felipe.</i><br>
-  <i>Hecho con TypeScript y ☕ en República Dominicana 🇩🇴</i>
-</p>
+## 📭 Contáctame
+
+Estoy abierto a **oportunidades full-time**, **proyectos freelance**, o simplemente para charlar sobre código, arquitectura y tecnología. ¡No dudes en escribirme!
+
+<div align="center">
+
+| 💼 LinkedIn | 🐙 GitHub | 🐦 X / Twitter | 📧 Email |
+| :---: | :---: | :---: | :---: |
+| [Felix Felipe](https://www.linkedin.com/in/felix-felipe00) | [@Lyscri](https://github.com/Lyscri) | [@Lyscri](https://twitter.com/Lyscri) | [Enviar Mensaje](mailto:felixrafaelff1109@gmail.com) |
+
+</div>
+
+---
+
+<div align="center">
+
+Hecho con ❤️ y ☕ en **República Dominicana 🇩🇴** por [Felix Felipe](https://github.com/Lyscri).
+
+</div>
