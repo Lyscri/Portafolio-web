@@ -41,19 +41,19 @@ export function SkillsCarousel() {
   const rowTwo = SKILLS.slice(half)
 
   return (
-    <section id="skills" className="py-24 bg-[#111111] overflow-x-hidden flex flex-col items-center justify-center" ref={containerRef}>
-      <div className="flex flex-col gap-6 w-full">
+    <section id="skills" className="pt-8 pb-32 overflow-x-hidden flex flex-col items-center justify-center" ref={containerRef}>
+      <div className="flex flex-col gap-8 w-full">
         {/* Row 1 — left to right */}
         <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#111111] to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#111111] to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0A0A0A] to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0A0A0A] to-transparent z-10 pointer-events-none" />
           <MarqueeRow skills={rowOne} />
         </div>
 
         {/* Row 2 — right to left */}
         <div className="relative">
-          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#111111] to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#111111] to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0A0A0A] to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0A0A0A] to-transparent z-10 pointer-events-none" />
           <MarqueeRow skills={rowTwo} reverse />
         </div>
       </div>
