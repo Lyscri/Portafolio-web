@@ -16,7 +16,7 @@ export function Contact() {
            transition={{ duration: 0.6 }}
          >
            <div className="flex flex-col items-center text-center w-full">
-             <SectionTitle label="" title="Trabajemos juntos" glitch />
+             <SectionTitle label="" title="Trabajemos juntos" />
              <p className="text-[#A3A3A3] text-center max-w-2xl mt-8 mb-16 text-lg leading-relaxed">
                Disponible para proyectos freelance, posiciones full-time o simplemente
                para hablar sobre tecnología. ¡Conectemos!
