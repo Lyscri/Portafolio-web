@@ -20,7 +20,7 @@ export function SkillItem({ skill }: SkillItemProps) {
   const iconUrl = `https://cdn.simpleicons.org/${skill.icon}/${skill.color.replace('#', '')}`
 
   return (
-    <div className="flex items-center gap-3 bg-[#111111] border border-[#1F1F1F] hover:border-[#E8000D] rounded-xl px-5 py-4 transition-all duration-300 hover:shadow-[0_0_20px_rgba(232,0,13,0.15)] min-w-[180px] group card-glow">
+    <div className="flex items-center gap-4 py-2 transition-all duration-300 min-w-max group">
       {isSqlServer ? (
         <>
           <img

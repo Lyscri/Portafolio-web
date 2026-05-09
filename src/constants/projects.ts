@@ -1,35 +1,25 @@
 import type { Project } from '@/types'
+import plavetLogo from '@/assets/images/plavet-logo.jpg'
 
-// REEMPLAZA con tus proyectos reales
 export const PROJECTS: Project[] = [
   {
-    id: 'project-1',
-    title: 'REEMPLAZA: Nombre del Proyecto 1',
-    description: 'REEMPLAZA: Descripción breve del proyecto. Qué problema resuelve y qué tecnologías usa.',
-    image: 'REEMPLAZA: src/assets/projects/project-1.jpg',
-    stack: ['TypeScript', 'React', 'HonoJS', 'PostgreSQL'],
-    demoUrl: 'https://tu-demo.com',
-    githubUrl: 'https://github.com/Lyscri/proyecto-1',
+    id: 'farmacia-mch',
+    title: 'Farmacia MCH',
+    description: 'Sistema de Gestión. Proyecto diseñado para facilitar la administración de farmacias, permitiendo facturación avanzada y control detallado de stock y productos.',
+    image: '', // Sin imagen
+    stack: ['React', 'NextJS', 'TypeScript'],
+    demoUrl: 'https://farmacia-mch-system.vercel.app/login',
+    githubUrl: 'https://github.com/Lyscri/farmacia-mch-system',
     featured: true,
   },
   {
-    id: 'project-2',
-    title: 'REEMPLAZA: Nombre del Proyecto 2',
-    description: 'REEMPLAZA: Descripción breve del proyecto. Qué problema resuelve y qué tecnologías usa.',
-    image: 'REEMPLAZA: src/assets/projects/project-2.jpg',
-    stack: ['NextJS', 'NestJS', 'SQL Server'],
-    demoUrl: 'https://tu-demo.com',
-    githubUrl: 'https://github.com/Lyscri/proyecto-2',
+    id: 'plavet',
+    title: 'PLAVET',
+    description: 'Sistema de Gestión de Pasantías y Empleabilidad. Plataforma integral multi-tenant que conecta estudiantes, instituciones y empresas para revolucionar las pasantías.',
+    image: plavetLogo,
+    stack: ['React', 'NextJS', 'Supabase', 'Multi-tenant'],
+    demoUrl: 'https://plavet-mobile.vercel.app/',
+    githubUrl: '', // No hay repo
     featured: true,
-  },
-  {
-    id: 'project-3',
-    title: 'REEMPLAZA: Nombre del Proyecto 3',
-    description: 'REEMPLAZA: Descripción breve del proyecto. Qué problema resuelve y qué tecnologías usa.',
-    image: 'REEMPLAZA: src/assets/projects/project-3.jpg',
-    stack: ['TypeScript', 'HonoJS', 'React'],
-    demoUrl: 'https://tu-demo.com',
-    githubUrl: 'https://github.com/Lyscri/proyecto-3',
-    featured: false,
   },
 ]
