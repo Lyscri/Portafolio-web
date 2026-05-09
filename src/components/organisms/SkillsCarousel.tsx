@@ -16,7 +16,7 @@ function MarqueeRow({ skills, reverse = false }: MarqueeRowProps) {
   return (
     <div className="overflow-hidden py-2">
       <motion.div
-        className="flex gap-4 w-max"
+        className="flex gap-20 w-max"
         animate={{ x: reverse ? ['-50%', '0%'] : ['0%', '-50%'] }}
         transition={{
           duration: MARQUEE_DURATION,
