@@ -11,60 +11,60 @@ const FOOTER_SOCIALS = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#050505] border-t border-[#1F1F1F] pt-24 pb-12">
+    <footer className="bg-[#0A0A0A] border-t border-white/5 pt-32 pb-16">
       <div className="w-full max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24">
           
           {/* Brand Column */}
-          <div className="col-span-1 md:col-span-2 flex flex-col items-start">
+          <div className="md:col-span-6 flex flex-col items-start">
             <button
               onClick={() => scrollToSection('#hero')}
-              className="font-mono font-bold text-xl tracking-tight cursor-none mb-6"
+              className="font-sans font-bold text-2xl tracking-tight mb-8 hover:opacity-80 transition-opacity"
             >
-              <span className="text-[#E8000D]">Felix Felipe</span>
-              <span className="text-white/70"> - Portafolio/</span>
+              <span className="text-white">Felix</span>
+              <span className="text-[#E8000D]">.Felipe</span>
             </button>
-            <p className="text-[#A3A3A3] max-w-md text-base leading-relaxed mb-8">
-              Desarrollador Fullstack enfocado en construir experiencias digitales escalables, 
-              rápidas y con un diseño impecable utilizando TypeScript.
+            <p className="text-[#888888] max-w-sm text-lg leading-relaxed font-sans mb-10">
+              Creando soluciones digitales de alto impacto con un enfoque en el rendimiento y la estética moderna.
             </p>
-            <div className="flex items-center gap-2 text-[#A3A3A3] text-sm">
+            <div className="flex items-center gap-3 text-[#666666] text-sm font-sans">
               <MapPin className="w-4 h-4 text-[#E8000D]" />
-              <span>República Dominicana</span>
+              <span>Santo Domingo, República Dominicana</span>
             </div>
           </div>
 
           {/* Links Column */}
-          <div className="flex flex-col items-start">
-            <h3 className="text-white font-mono font-bold mb-6 text-sm uppercase tracking-wider">
+          <div className="md:col-span-3 flex flex-col items-start">
+            <h3 className="text-white font-sans font-semibold mb-8 text-sm uppercase tracking-[0.2em]">
               Navegación
             </h3>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-5">
               {NAV_LINKS.map(link => (
                 <button
                   key={link.href}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-[#A3A3A3] hover:text-[#E8000D] transition-colors cursor-none text-left text-sm flex items-center gap-1 group"
+                  className="text-[#888888] hover:text-white transition-colors text-left text-base font-sans relative group w-fit"
                 >
                   {link.label}
-                  <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#E8000D] transition-all duration-300 group-hover:w-full" />
                 </button>
               ))}
             </div>
           </div>
 
           {/* Socials Column */}
-          <div className="flex flex-col items-start">
-            <h3 className="text-white font-mono font-bold mb-6 text-sm uppercase tracking-wider">
+          <div className="md:col-span-3 flex flex-col items-start">
+            <h3 className="text-white font-sans font-semibold mb-8 text-sm uppercase tracking-[0.2em]">
               Conecta
             </h3>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-5">
               <a
                 href="mailto:felixrafaelff1109@gmail.com"
-                className="text-[#A3A3A3] hover:text-[#E8000D] transition-colors cursor-none text-sm flex items-center gap-2"
+                className="text-[#888888] hover:text-white transition-colors text-base font-sans flex items-center gap-3 relative group w-fit"
               >
                 <Mail className="w-4 h-4" />
                 Email
+                <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#E8000D] transition-all duration-300 group-hover:w-full" />
               </a>
               {FOOTER_SOCIALS.map(link => (
                 <a
@@ -72,10 +72,11 @@ export function Footer() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#A3A3A3] hover:text-[#E8000D] transition-colors cursor-none text-sm flex items-center gap-2"
+                  className="text-[#888888] hover:text-white transition-colors text-base font-sans flex items-center gap-3 relative group w-fit"
                 >
                   <SocialIcon name={link.icon} className="w-4 h-4" />
                   {link.label}
+                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#E8000D] transition-all duration-300 group-hover:w-full" />
                 </a>
               ))}
             </div>
@@ -84,12 +85,12 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-[#1F1F1F] flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-[#A3A3A3] text-sm font-mono">
-            © {getCurrentYear()} Felix Felipe. Todos los derechos reservados.
+        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[#555555]">
+          <p className="text-sm font-sans tracking-wide">
+            © {getCurrentYear()} <span className="text-white">Felix Felipe</span>. Todos los derechos reservados.
           </p>
-          <p className="text-[#A3A3A3] text-sm font-mono flex items-center gap-1">
-            Hecho con <span className="text-[#E8000D]">TypeScript</span> y ☕
+          <p className="text-sm font-sans flex items-center gap-2 tracking-wide">
+            Construido con <span className="text-white font-medium">TypeScript</span> <span className="text-[#E8000D]">/</span> ☕
           </p>
         </div>
       </div>
