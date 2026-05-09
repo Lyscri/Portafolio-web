@@ -7,17 +7,17 @@ import { SOCIAL_LINKS } from '@/constants/navigation'
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 bg-[#111111]">
-       <div className="max-w-4xl mx-auto px-6 text-center">
+    <section id="contact" style={{ paddingTop: '100px', paddingBottom: '128px' }} className="bg-[#0A0A0A] flex flex-col items-center justify-center">
+       <div className="w-full max-w-4xl mx-auto px-6 text-center">
          <motion.div
            initial={{ opacity: 0, y: 40 }}
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 0.6 }}
          >
-           <div className="flex flex-col items-center text-center w-full mb-12">
-             <SectionTitle label="// contacto" title="Trabajemos juntos" glitch />
-             <p className="text-[#A3A3A3] text-center max-w-2xl mt-4 text-lg leading-relaxed">
+           <div className="flex flex-col items-center text-center w-full">
+             <SectionTitle label="" title="Trabajemos juntos" glitch />
+             <p className="text-[#A3A3A3] text-center max-w-2xl mt-8 mb-16 text-lg leading-relaxed">
                Disponible para proyectos freelance, posiciones full-time o simplemente
                para hablar sobre tecnología. ¡Conectemos!
              </p>
@@ -29,7 +29,7 @@ export function Contact() {
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 0.6, delay: 0.2 }}
-           className="flex flex-col items-center gap-8"
+           className="flex flex-col items-center gap-10"
          >
            <a href="mailto:felixrafaelff1109@gmail.com">
              <Button size="lg">

@@ -77,43 +77,43 @@ export function Hero() {
             </div>
           </div>
 
-           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
+           <div className="flex flex-col sm:flex-row items-center justify-center gap-8" style={{ marginTop: '120px' }}>
              <button
                onClick={() => scrollToSection('#projects')}
                className="
                  inline-flex items-center justify-center gap-3
-                 px-10 py-4
+                 px-12 py-5
                  bg-[#E8000D] text-white
                  border-2 border-[#E8000D]
-                 font-mono font-bold text-sm tracking-widest uppercase
+                 font-mono font-bold text-base tracking-widest uppercase
                  rounded-none
                  transition-all duration-200
                  hover:bg-white hover:text-[#E8000D]
                  w-full sm:w-auto
-                 min-w-[180px]
+                 min-w-[220px]
                "
              >
                Ver proyectos
-               <ArrowDown className="w-4 h-4" />
+               <ArrowDown className="w-5 h-5" />
              </button>
 
              <button
                onClick={() => scrollToSection('#contact')}
                className="
                  inline-flex items-center justify-center gap-3
-                 px-10 py-4
+                 px-12 py-5
                  bg-transparent text-[#E8000D]
                  border-2 border-[#E8000D]
-                 font-mono font-bold text-sm tracking-widest uppercase
+                 font-mono font-bold text-base tracking-widest uppercase
                  rounded-none
                  transition-all duration-200
                  hover:bg-[#E8000D] hover:text-white
                  w-full sm:w-auto
-                 min-w-[180px]
+                 min-w-[220px]
                "
              >
                Contactar
-               <Mail className="w-4 h-4" />
+               <Mail className="w-5 h-5" />
              </button>
            </div>
         </motion.div>
