@@ -11,7 +11,7 @@ interface ProjectCardProps {
   index: number
 }
 
-const isPlaceholderImage = (src: string) => src.startsWith('REEMPLAZA')
+const isPlaceholderImage = (src: string) => !src || src.startsWith('REEMPLAZA')
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
   return (
@@ -29,7 +29,9 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             <div className="w-12 h-12 rounded-full bg-[#E8000D]/10 border border-[#E8000D]/30 flex items-center justify-center">
               <SocialIcon name="github" className="w-6 h-6 text-[#E8000D]" />
             </div>
-            <TodoPlaceholder message={`Imagen: src/assets/projects/${project.id}.jpg`} />
+            <p className="text-[#A3A3A3] text-xs font-mono uppercase tracking-widest">
+              Preview no disponible
+            </p>
           </div>
         ) : (
           <img
@@ -47,12 +49,14 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               Demo
             </Button>
           </a>
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-            <Button size="sm" variant="secondary">
-              <SocialIcon name="github" className="w-4 h-4" />
-              GitHub
-            </Button>
-          </a>
+          {project.githubUrl && (
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+              <Button size="sm" variant="secondary">
+                <SocialIcon name="github" className="w-4 h-4" />
+                GitHub
+              </Button>
+            </a>
+          )}
         </div>
       </div>
 
@@ -76,12 +80,14 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               Ver demo
             </Button>
           </a>
-          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
-            <Button variant="outline" size="sm" className="w-full">
-              <SocialIcon name="github" className="w-4 h-4" />
-              GitHub
-            </Button>
-          </a>
+          {project.githubUrl && (
+            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+              <Button variant="outline" size="sm" className="w-full">
+                <SocialIcon name="github" className="w-4 h-4" />
+                GitHub
+              </Button>
+            </a>
+          )}
         </div>
       </div>
     </motion.div>
