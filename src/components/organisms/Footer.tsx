@@ -87,13 +87,17 @@ export function Footer() {
 
       {/* Bottom Bar Full Width */}
       <div className="border-t border-white/5 py-12">
-        <div className="w-full max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-[#555555]">
-          <p className="text-sm font-sans tracking-wide">
-            © {getCurrentYear()} <span className="text-white">Felix Felipe</span>. Todos los derechos reservados.
-          </p>
-          <p className="text-sm font-sans flex items-center gap-2 tracking-wide">
-            Construido con <span className="text-white font-medium">TypeScript</span> <span className="text-[#E8000D]">/</span> ☕
-          </p>
+        <div className="w-full max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 text-[#555555]">
+          <div className="md:col-span-9">
+            <p className="text-sm font-sans tracking-wide">
+              © {getCurrentYear()} <span className="text-white font-medium">Felix Felipe</span>. Todos los derechos reservados.
+            </p>
+          </div>
+          <div className="md:col-span-3">
+            <p className="text-sm font-sans flex items-center gap-2 tracking-wide">
+              Construido con <span className="text-white font-medium">TypeScript</span> <span className="text-[#E8000D]">/</span> ☕
+            </p>
+          </div>
         </div>
       </div>
     </footer>
