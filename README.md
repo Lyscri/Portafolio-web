@@ -26,8 +26,8 @@ Especializado en el desarrollo *end-to-end* en el ecosistema **TypeScript**, aba
 | :--- | :--- | :--- | :--- |
 | **React** (Hooks, Context) | **NestJS** (Modular, OOP) | **PostgreSQL** | **Git / GitHub** |
 | **Next.js** (SSR, SSG) | **HonoJS** (Edge, Rápido) | **SQL Server** | **Docker** |
-| **Tailwind CSS** | **Node.js / Express** | Redis (Opcional) | Vite / Webpack |
-| Framer Motion | RESTful APIs | TypeORM / Prisma | ESLint / Prettier |
+| **Tailwind CSS** | **Node.js / Express** | Redis  | Vite / Webpack |
+| Framer Motion | RESTful APIs | Drizzle / Prisma | ESLint / Prettier |
 
 ---
 
