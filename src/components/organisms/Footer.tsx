@@ -13,9 +13,9 @@ export function Footer() {
   return (
     <footer className="bg-[#0A0A0A] border-t border-white/5 pt-32 pb-16">
       <div className="w-full max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between gap-12 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
           
-          {/* Brand Column */}
+          {/* Brand Column - Left */}
           <div className="flex flex-col items-start">
             <button
               onClick={() => scrollToSection('#hero')}
@@ -33,12 +33,12 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Links Column */}
-          <div className="flex flex-col items-start">
+          {/* Links Column - Center */}
+          <div className="flex flex-col items-start md:items-center">
             <h3 className="text-white font-sans font-semibold mb-8 text-sm uppercase tracking-[0.2em]">
               Navegación
             </h3>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 items-start md:items-center">
               {NAV_LINKS.map(link => (
                 <button
                   key={link.href}
@@ -52,12 +52,12 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Socials Column */}
+          {/* Socials Column - Right */}
           <div className="flex flex-col items-start md:items-end">
             <h3 className="text-white font-sans font-semibold mb-8 text-sm uppercase tracking-[0.2em]">
               Conecta
             </h3>
-            <div className="flex flex-col gap-5 items-start md:items-end">
+            <div className="flex flex-col gap-5 items-start md:items-end text-left md:text-right">
               <a
                 href="mailto:felixrafaelff1109@gmail.com"
                 className="text-[#888888] hover:text-white transition-colors text-base font-sans flex items-center gap-3 relative group w-fit"
