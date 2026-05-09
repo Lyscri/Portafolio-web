@@ -29,7 +29,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-3 text-[#666666] text-sm font-sans">
               <MapPin className="w-4 h-4 text-[#E8000D]" />
-              <span>Santo Domingo, República Dominicana</span>
+              <span>Santiago De Los Caballeros, Rep Dom</span>
             </div>
           </div>
 
@@ -83,9 +83,11 @@ export function Footer() {
           </div>
 
         </div>
+      </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[#555555]">
+      {/* Bottom Bar Full Width */}
+      <div className="border-t border-white/5 py-12">
+        <div className="w-full max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-[#555555]">
           <p className="text-sm font-sans tracking-wide">
             © {getCurrentYear()} <span className="text-white">Felix Felipe</span>. Todos los derechos reservados.
           </p>
