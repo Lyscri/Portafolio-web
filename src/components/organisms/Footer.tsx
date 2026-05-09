@@ -16,7 +16,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24">
           
           {/* Brand Column */}
-          <div className="md:col-span-6 flex flex-col items-start">
+          <div className="md:col-span-5 flex flex-col items-start">
             <button
               onClick={() => scrollToSection('#hero')}
               className="font-sans font-bold text-2xl tracking-tight mb-8 hover:opacity-80 transition-opacity"
@@ -53,7 +53,7 @@ export function Footer() {
           </div>
 
           {/* Socials Column */}
-          <div className="md:col-span-3 flex flex-col items-start">
+          <div className="md:col-span-4 flex flex-col items-start">
             <h3 className="text-white font-sans font-semibold mb-8 text-sm uppercase tracking-[0.2em]">
               Conecta
             </h3>
@@ -88,12 +88,12 @@ export function Footer() {
       {/* Bottom Bar Full Width */}
       <div className="border-t border-white/5 py-12">
         <div className="w-full max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 text-[#555555]">
-          <div className="md:col-span-9">
+          <div className="md:col-span-8">
             <p className="text-sm font-sans tracking-wide">
               © {getCurrentYear()} <span className="text-white font-medium">Felix Felipe</span>. Todos los derechos reservados.
             </p>
           </div>
-          <div className="md:col-span-3">
+          <div className="md:col-span-4 flex md:justify-end">
             <p className="text-sm font-sans flex items-center gap-2 tracking-wide">
               Construido con <span className="text-white font-medium">TypeScript</span> <span className="text-[#E8000D]">/</span> ☕
             </p>
