@@ -1,8 +1,8 @@
 import { ExternalLink } from 'lucide-react'
-import { motion } from 'framer-motion'
 import { Badge } from '@/components/atoms/Badge'
 import { Button } from '@/components/atoms/Button'
 import { SocialIcon } from '@/components/atoms/SocialIcon'
+import { useScrollReveal } from '@/hooks/useScrollReveal'
 import type { Project } from '@/types'
 
 interface ProjectCardProps {
@@ -13,12 +13,16 @@ interface ProjectCardProps {
 const isPlaceholderImage = (src: string) => !src || src.startsWith('REEMPLAZA')
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
+  const revealRef = useScrollReveal({
+    origin: 'bottom',
+    delay: (index % 3) * 150,
+    distance: '40px',
+    scale: 0.95
+  })
+
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      viewport={{ once: true }}
+    <div
+      ref={revealRef as React.RefObject<HTMLDivElement>}
       className="bg-[#111111] border border-[#1F1F1F] rounded-2xl overflow-hidden group hover:border-[#E8000D]/50 transition-all duration-300 card-glow min-h-[420px] flex flex-col"
     >
       {/* Image */}
@@ -89,6 +93,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           )}
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
+
