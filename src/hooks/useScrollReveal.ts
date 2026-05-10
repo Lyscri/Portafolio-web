@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import anime from 'animejs'
+import { animate } from 'animejs'
 
 interface ScrollRevealOptions {
   delay?: number
@@ -17,9 +17,9 @@ export function useScrollReveal(options: ScrollRevealOptions = {}) {
 
   const {
     delay = 0,
-    duration = 1000,
-    easing = 'easeOutExpo',
-    distance = '30px',
+    duration = 1400, // Duración un poco más larga para mayor suavidad
+    easing = 'outCubic', // Easing más suave que 'outExpo'
+    distance = '20px', // Distancia más sutil
     origin = 'bottom',
     opacity = 0,
     scale = 1,
@@ -48,22 +48,24 @@ export function useScrollReveal(options: ScrollRevealOptions = {}) {
           if (entry.isIntersecting && !hasAnimated.current) {
             hasAnimated.current = true
             
-            anime({
-              targets: element,
+            animate(element, {
               opacity: [opacity, 1],
               translateX: [translateX, 0],
               translateY: [translateY, 0],
               scale: [scale, 1],
               delay,
               duration,
-              easing,
+              ease: easing,
             })
 
             observer.unobserve(element)
           }
         })
       },
-      { threshold: 0.1 }
+      { 
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px' // Comienza un poco antes de que sea totalmente visible
+      }
     )
 
     observer.observe(element)
@@ -75,3 +77,6 @@ export function useScrollReveal(options: ScrollRevealOptions = {}) {
 
   return elementRef
 }
+
+
+
