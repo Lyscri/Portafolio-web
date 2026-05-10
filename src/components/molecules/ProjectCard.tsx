@@ -16,8 +16,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
   const revealRef = useScrollReveal({
     origin: 'bottom',
     delay: (index % 3) * 150,
-    distance: '40px',
-    scale: 0.95
+    distance: '20px',
+    scale: 0.98
   })
 
   return (
