@@ -1,39 +1,32 @@
-import { motion } from 'framer-motion'
 import { SectionTitle } from '@/components/atoms/SectionTitle'
 import { MetricCard } from '@/components/molecules/MetricCard'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
+import { useScrollReveal } from '@/hooks/useScrollReveal'
 import { METRICS } from '@/constants/navigation'
 import profileImage from '@/assets/images/profile.jpg'
 
-const FADE_IN_UP = {
-  initial: { opacity: 0, y: 40 },
-  whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.6 },
-}
-
 export function About() {
-  const { ref, isVisible } = useScrollAnimation({ threshold: 0.2 })
+  const { ref: metricsRef, isVisible } = useScrollAnimation({ threshold: 0.2 })
+  
+  const titleRef = useScrollReveal({ origin: 'bottom', delay: 100 })
+  const imageRef = useScrollReveal({ origin: 'left', delay: 300, distance: '50px' })
+  const textRef = useScrollReveal({ origin: 'right', delay: 500, distance: '50px' })
 
   return (
     <section id="about" className="pt-32 pb-16 bg-[#0A0A0A] flex flex-col items-center justify-center">
       <div className="w-full max-w-7xl mx-auto px-6">
-        <motion.div {...FADE_IN_UP}>
-  <div className="flex flex-col items-center text-center w-full">
-    <SectionTitle label="" title="Quién soy" />
-    <p className="text-[#A3A3A3] text-center max-w-2xl mt-8 mb-16">
-      Desarrollador Fullstack con enfoque en TypeScript.
-    </p>
-  </div>
-</motion.div>
+        <div ref={titleRef as React.RefObject<HTMLDivElement>}>
+          <div className="flex flex-col items-center text-center w-full">
+            <SectionTitle label="" title="Quién soy" />
+            <p className="text-[#A3A3A3] text-center max-w-2xl mt-8 mb-16">
+              Desarrollador Fullstack con enfoque en TypeScript.
+            </p>
+          </div>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Photo */}
-          <motion.div
-            {...FADE_IN_UP}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex justify-center"
-          >
+          <div ref={imageRef as React.RefObject<HTMLDivElement>} className="flex justify-center">
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border border-[#1F1F1F] bg-[#111111] flex items-center justify-center">
                 <img
@@ -45,19 +38,14 @@ export function About() {
               {/* Decorative border */}
               <div className="absolute -bottom-3 -right-3 w-full h-full border border-[#E8000D]/30 rounded-2xl -z-10" />
             </div>
-          </motion.div>
+          </div>
 
           {/* Text */}
-          <motion.div
-            {...FADE_IN_UP}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-col gap-6"
-          >
+          <div ref={textRef as React.RefObject<HTMLDivElement>} className="flex flex-col gap-6">
             <div className="space-y-4 text-[#A3A3A3] leading-relaxed">
               <p className="text-white text-lg font-medium">
                 Desarrollador Fullstack apasionado por construir experiencias digitales de alto impacto.
               </p>
-              {/* REEMPLAZA con tu autobiografía extendida */}
               <p>
                 Soy <span className="text-white font-medium">Felix Felipe</span>, desarrollador Full Stack especializado en el ecosistema <span className="text-white font-medium">TypeScript</span>. Mi enfoque no está solo en escribir código, sino en construir soluciones web que aporten un valor real y tangible.
               </p>
@@ -75,7 +63,7 @@ export function About() {
 
             {/* Metrics */}
             <div
-              ref={ref as React.RefObject<HTMLDivElement>}
+              ref={metricsRef as React.RefObject<HTMLDivElement>}
               className="grid grid-cols-3 gap-4 mt-4"
             >
               {METRICS.map((metric, i) => (
@@ -87,9 +75,10 @@ export function About() {
                 />
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
   )
 }
+
