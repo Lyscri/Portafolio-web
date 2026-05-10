@@ -9,8 +9,8 @@ export function About() {
   const { ref: metricsRef, isVisible } = useScrollAnimation({ threshold: 0.2 })
   
   const titleRef = useScrollReveal({ origin: 'bottom', delay: 100 })
-  const imageRef = useScrollReveal({ origin: 'left', delay: 300, distance: '50px' })
-  const textRef = useScrollReveal({ origin: 'right', delay: 500, distance: '50px' })
+  const imageRef = useScrollReveal({ origin: 'left', delay: 300, distance: '30px' })
+  const textRef = useScrollReveal({ origin: 'right', delay: 500, distance: '30px' })
 
   return (
     <section id="about" className="pt-32 pb-16 bg-[#0A0A0A] flex flex-col items-center justify-center">
